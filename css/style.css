@@ -47,7 +47,6 @@ body {
 .logo {
     display: flex;
     flex: 25%;
-    /* border: 1px solid rgb(255, 255, 255); */
     text-align: center;
     font-size: 18px;
     align-items: center;
@@ -84,6 +83,10 @@ body {
     color: rgba(255, 255, 255, 0.75);
 }
 
+.menu img {
+    display: none;
+}
+
 #btn-reserve {
     letter-spacing: 1px;
     font-weight: bold;
@@ -104,7 +107,27 @@ body {
     font-family: 'Genos', sans-serif;
     font-weight: bold;
 }
-/*
+
+@media (max-width: 1400px) {
+    .navbar .logo {
+        flex: 60%;
+        text-align: left;
+    }
+
+    .menu {
+        flex: 20%;
+    }
+
+    .menu a {
+        display: none;
+    }
+
+    .menu img {
+        display: inline-block;
+        width: 70px;
+    }
+}
+
 /* Hero */
 
 .hero {
@@ -199,6 +222,63 @@ body {
     padding-top: 20px;
 }
 
+.txt-hero-mobile {
+    display: none;
+}
+
+@media (max-width: 1400px) {
+    .hero {
+        text-align: center;
+        width: 100%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: auto;
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+
+    #texto-pequeno {
+        display: none;
+    }
+
+    .texto-hero {
+        flex: 100%;
+        flex-wrap: wrap;
+        text-align: center;
+        max-width: 80%;
+        padding-bottom: 40px;
+    }
+
+    .texto-hero h1 {
+        text-wrap: wrap;
+    }
+
+    .texto-hero p {
+        max-width: 1400px;
+        text-align: center;
+    }
+
+    .txt-hero {
+        display: none;
+    }
+
+    .img-hero {
+        margin: 0 auto;
+        flex: 100%;
+        width: 100%;
+    }
+
+    .txt-hero-mobile {
+        display: block;
+    }
+
+    .txt-hero-mobile span {
+        color: #FEBE43;
+    }
+}
+
 /* Terrenos */
 
 .terrenos {
@@ -208,12 +288,16 @@ body {
     display: flex;
     flex-wrap: wrap;
     height: auto;
+    justify-content: center;
+    align-items: start;
+    /* border: 1px solid green; */
+    gap: 20px 11%;
 }
 
 .terrenos-item {
     /* border: 1px solid red; */
     width: 33%;
-    flex: 1 1 600px;
+    flex: 1 1 450px;
     margin: 20px 10px;
     display: flex;
     flex-direction: column;
@@ -474,7 +558,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 20px 5%;
+    gap: 20px 11%;
     padding-bottom: 100px;
 }
 
@@ -494,15 +578,36 @@ body {
 }
 
 #nome {
-    max-width: 600px;
-    width: 45%;
-    margin: 0;
+    flex: 1 1 300px;
     cursor: text;
+    width: 100%;
+    min-width: 300px;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 #inscrever {
-    width: 45%;
-    margin: 0;
+    flex: 1 1 300px;
+    width: 100%;
+    min-width: 300px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1521px) {
+    .newsletter {
+        justify-content: center;
+        align-items: start;
+        gap: 20px 11%;
+    }
+
+    #email {
+        flex: 1 1 300px;
+        width: 100%;
+        min-width: 300px;
+        max-width: 500px;
+        margin: 0 auto;
+    }
 }
 
 /* Footer */
