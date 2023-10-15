@@ -11,31 +11,62 @@
 </head>
 <body>
     <header class="navbar">
-            <div class="logo">
-                <a href="#hero"><img src="img/logo.png" alt="Logo"></a>
-                <a href="#hero"><h1>Cosmic Horizons Realty</h1></a>
-            </div>
+        <div class="logo">
+            <a href="#hero"><img src="img/logo.png" alt="Logo"></a>
+            <a href="#hero"><h1>Cosmic Horizons Realty</h1></a>
+        </div>
         <div class="menu">
-                <a href="#">Quem somos?</a>
-                <a href="#terrenos">Terrenos à venda</a>
-                <a href="#">Fale conosco</a></li>
-                <a href="#procurar" id="btn-reserve">Reserve</a>
-                <img src="img/menu.png" alt="Menu hamburguer" class="menu-hamburguer">
+            <a href="#">Quem somos?</a>
+            <a href="#terrenos">Terrenos à venda</a>
+            <a href="#">Fale conosco</a></li>
+            <a href="#procurar" id="btn-reserve">Reserve</a>
+            <img src="img/menu.png" alt="Menu hamburguer" class="menu-hamburguer">
         </div>
     </header>
-
+        
+    <nav class="navbar-mobile">
+        <input type="checkbox" class="menu-faketrigger">
+        <div class="menu-lines">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="items-hamburguer">
+            <div class="blank-space"></div>
+            <div class="linha-azul"></div>
+            <li><a href="#">Cadastre-se</a></li>
+            <div class="linha-azul"></div>
+            <li><a href="#">Quem somos?</a></li>
+            <li><a href="#terrenos">Terrenos à venda</a></li>
+            <li><a href="#">Fale conosco</a></li>
+            <div class="linha-azul"></div>
+            <li><div class="redes">
+                <a href="https://whatsapp.com" target="_blank"><img src="img/zap-menu.png" alt="WhatsApp"></a>
+                <a href="https://instagram.com" target="_blank"><img src="img/insta-menu.png" alt="Instagram"></a>
+                <a href="https://facebook.com" target="_blank"><img src="img/face-menu.png" alt="Facebook"></a>
+                <a href="https://linkedin.com" target="_blank"><img src="img/link-menu.png" alt="LinkedIn"></a>
+            </div></li>
+            <div class="linha-azul"></div>
+            <li id="logo-menu-hamburguer"><img src="img/logo-menu-hamburguer.png" alt="Logo CHR"></li>
+            <li><p>&copy; Cosmic Horizons Realty</p>
+            <p>Todos os direitos reservados 2023</p></li>
+        </ul>
+    </nav>
+    
     <section class="hero" id="hero">
         <div class="texto-hero">
             <h1>Garanta o futuro<br>da moradia</h1>
             <p class="txt-hero">Seu sonho de possuir um pedacinho de um planeta distante pode se realizar!<br>
                 A Cosmic Horizons Realty é a sua porta de entrada para adquirir terrenos em outros astros  para torná-lo um verdadeiro pioneiro interplanetário.</p>
-            <p class="txt-hero-mobile">A Cosmic Horizons Realty pode <span class="">realizar o seu sonho</span> de possuir um pedaço de um planeta distante!</p>
             <a href="#procurar">Reserve seu terreno</a>
-            <div id="texto-pequeno"><img src="img/mini-planeta.png" alt="Mini Planeta" class="mini-planeta" "><p id="pequeno">Encontre o ideal para você em todo o Sistema Solar!</p></div>
+            <div id="texto-pequeno">
+                    <img src="img/mini-planeta.png" alt="Mini Planeta" class="mini-planeta" "><p id="pequeno">Encontre o ideal para você em todo o Sistema Solar!</p>
+            </div>
         </div>
         <div class="img-hero">
             <img class="saturno" src="img/saturno.png" alt="Saturno">
         </div>
+        <p class="txt-hero-mobile">A Cosmic Horizons Realty pode <span class="">realizar o seu sonho</span> de possuir um pedaço de um planeta distante!</p>
     </section>
 
     <section class="terrenos" id="terrenos">
